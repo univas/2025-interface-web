@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Loja Virtual</title>
+
+    <style>
+        *{
+            font-family: sans-serif;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+        
+        h1{
+            text-transform: uppercase;
+            text-align: center;
+            margin: 30px;
+            color: purple;
+        }
+
+        h2{
+            text-align: center;
+            border-bottom: 1px solid black;
+            width: 33%;
+            margin: 50px auto;
+            text-transform: uppercase;
+            color: darkslategray;
+        }
+
+        nav{
+            max-width: 85%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            text-transform: uppercase;
+        }
+
+        nav a{
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        main{
+            max-width: 85%;
+            margin: 0 auto;
+            margin-top: 200px;
+        }
+
+        #produtos-lista{
+            /* display: flex; */
+            text-align: center;
+        }
+
+        #produtos-lista li{
+            list-style: none;
+            display: inline-flex;
+            width: 150px;
+            height: 60px;
+            background-color: darkorchid;
+            margin: 5px;
+            text-align: center;
+            vertical-align: middle;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+        }
+
+        #produtos-lista li:hover{
+            background-color: fuchsia;
+            transform: scale(1.2);
+            transition: 1s;
+        }
+
+        #imagens-conteudo{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            overflow-x: scroll;
+        }
+
+        #imagens-conteudo img{
+            margin: 20px;
+            box-shadow: 4px 26px 38px 0px rgba(141, 2, 122, 0.3);
+        }
+
+        header{
+            position: fixed;
+            width: 100%;
+            top: 0;
+            background-color: white;
+            padding-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="inicio">Minha loja virtual</h1>
+        <nav>
+            <span>
+                <a href="#inicio">Início</a>
+            </span>
+            <span>
+                <a href="#sobre">Sobre</a>
+            </span>
+            <span>
+                <a href="#produtos">Produtos</a>
+            </span>
+            <span>
+                <a href="#imagens">Imagens</a>
+            </span>
+            <span>
+                <a href="#contato">Contato</a>
+            </span>
+        </nav>
+    </header>
+
+
+    <main>
+        <h2 id="sobre">Sobre</h2>
+        <div id="sobre-conteudo">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, est nisi iste, dolorem aut modi voluptatem animi, explicabo ab accusantium eum! In esse blanditiis veniam quasi modi numquam, nobis pariatur?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, est nisi iste, dolorem aut modi voluptatem animi, explicabo ab accusantium eum! In esse blanditiis veniam quasi modi numquam, nobis pariatur?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, est nisi iste, dolorem aut modi voluptatem animi, explicabo ab accusantium eum! In esse blanditiis veniam quasi modi numquam, nobis pariatur?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, est nisi iste, dolorem aut modi voluptatem animi, explicabo ab accusantium eum! In esse blanditiis veniam quasi modi numquam, nobis pariatur?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, est nisi iste, dolorem aut modi voluptatem animi, explicabo ab accusantium eum! In esse blanditiis veniam quasi modi numquam, nobis pariatur?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, est nisi iste, dolorem aut modi voluptatem animi, explicabo ab accusantium eum! In esse blanditiis veniam quasi modi numquam, nobis pariatur?</p>
+        </div>
+
+        <h2 id="produtos">Meus Produtos</h2>
+        <ul id="produtos-lista">
+            <li>Smartphone 5G</li>
+            <li>Fone de Ouvido Sem Fio</li>
+            <li>Suplementos Alimentares</li>
+            <li>Relógio Inteligente</li>
+            <li>Roupa Sustentável</li>
+            <li>Bolsa Funcional</li>
+            <li>Produto de Skincare</li>
+            <li>Ferramenta de Beleza</li>
+            <li>Cadeira Ergonômica</li>
+            <li>Aspirador Robô</li>
+            <li>Brinquedo Educativo</li>
+            <li>Roupa Ecológica para Bebê</li>
+            <li>Kit de Refeições</li>
+            <li>Café Gourmet</li>
+            <li>Equipamento de Exercício</li>
+            <li>Bicicleta Elétrica</li>
+            <li>Livro Digital</li>
+            <li>Kit de Organização</li>
+            <li>Notebook</li>
+            <li>Cadeira Gamer</li>
+        </ul>
+
+        <h2 id="imagens">Imagens dos produtos</h2>
+        <div id="imagens-conteudo">
+            <img width="100px" src="https://tse3.mm.bing.net/th?id=OIP.6BmjzAUIAlXN_sCJ0PbJkgHaHa&cb=iwp1&pid=Api" alt="Smartphone 5G">
+            <img width="100px" src="https://tse3.mm.bing.net/th?id=OIP.xYKEbKeiv-46mogkGiHzTAHaHa&cb=iwc1&pid=Api" alt="Fone de Ouvido Sem Fio">
+            <img width="100px" src="https://tse2.mm.bing.net/th?id=OIP.2ZHDnIwHkV0RkWBJYcDPXQHaE7&cb=iwp1&pid=Api" alt="Suplementos Alimentares">
+            <img width="100px" src="https://tse3.mm.bing.net/th?id=OIP.m4fjgwd-EjyT909jueuAaAHaHa&pid=Api" alt="Relógio Inteligente">
+            <img width="100px" src="https://tse1.mm.bing.net/th?id=OIP.BsRsffxh7Ywcu7bkIrYMKgHaJe&pid=Api" alt="Roupa Sustentável">
+            <img width="100px" src="https://tse3.mm.bing.net/th?id=OIP.WvlF4kJQdt0kYfAjrqAfeQHaJ3&pid=Api" alt="Bolsa Funcional">
+            <img width="100px" src="https://tse4.mm.bing.net/th?id=OIP.kH-B5b5D_Mfo15WfsC1kKQHaEo&pid=Api" alt="Produto de Skincare">
+            <img width="100px" src="https://tse2.mm.bing.net/th?id=OIP.gsOtSBxSZb2p3f6po4EZlAHaHa&cb=iwp1&pid=Api" alt="Ferramenta de Beleza">
+            <img width="100px" src="https://tse1.mm.bing.net/th?id=OIP._LzrzQ_BsxslaBUfFjKj9QHaHa&cb=iwc1&pid=Api" alt="Cadeira Ergonômica">
+            <img width="100px" src="https://tse3.mm.bing.net/th?id=OIP.e0EG3LNGMUjqUwu6VkqC2QHaGC&cb=iwc1&pid=Api" alt="Aspirador Robô">
+            <img width="100px" src="https://tse4.mm.bing.net/th?id=OIP.nSRY2cTReLtnqNAAXAocuQHaGc&cb=iwc1&pid=Api" alt="Brinquedo Educativo">
+            <img width="100px" src="https://tse2.mm.bing.net/th?id=OIP.htORK95wVIbxWeV6jp45NAHaLH&cb=iwc1&pid=Api" alt="Roupa Ecológica para Bebê">
+            <img width="100px" src="https://tse3.mm.bing.net/th?id=OIP.Wt-6GVpPJEZWK4tV9LvBfAHaHa&pid=Api" alt="Kit de Refeições">
+            <img width="100px" src="https://tse4.mm.bing.net/th?id=OIP.mHHeCjtsQVbmk9C_VIVzlwHaD4&cb=iwc1&pid=Api" alt="Café Gourmet">
+            <img width="100px" src="https://tse4.mm.bing.net/th?id=OIP.cLrcHfMyuGRzOyb49apEZQHaEK&cb=iwp1&pid=Api" alt="Equipamento de Exercício">
+            <img width="100px" src="https://tse2.mm.bing.net/th?id=OIP.MU1MTgyzIE5HWDZnDQM3GQHaE8&pid=Api" alt="Bicicleta Elétrica">
+            <img width="100px" src="https://tse1.mm.bing.net/th?id=OIP.KZaMiw8cOmXuSyIqntKp5QHaE6&pid=Api" alt="Livro Digital">
+            <img width="100px" src="https://tse2.mm.bing.net/th?id=OIP.X9fEvViwMIbk_EGB2TwJmgHaHa&pid=Api" alt="Kit de Organização">
+            <img width="100px" src="https://tse4.mm.bing.net/th?id=OIP.I3k8WQsbh3xhGuNxs8u2UwHaHa&pid=Api" alt="Notebook">
+            <img width="100px" src="https://tse4.mm.bing.net/th?id=OIP.wGhiDvFA-inr1dxnikpmqQHaE7&pid=Api" alt="Cadeira Gamer">
+        </div>
+        
+
+        <h2 id="contato">Fale Conosco</h2>
+    </main>
+</body>
+</html>
