@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores CSS</title>
+
+    <style>
+        *{ /* TODOS OS ELEMENTOS*/
+            font-family: sans-serif;
+        }
+
+        body{
+            margin: 0;
+        }
+
+        .paragrafo{ /* Classe */
+            margin: 35px;
+            border-bottom: 3px solid #CECECE;
+            padding-bottom: 5px;
+            color: blue;
+        }
+
+        #letra{ /* ID */
+            font-size: 36px;
+            font-weight: bold;
+        }
+
+        h1, h2{ /* TAG */
+            text-align: center;
+        }
+
+        /* h2{
+            text-align: center;
+        } */
+
+        #subtitulo-diferente{
+            text-transform: uppercase;
+            text-decoration: underline;
+            text-align: right; /* Vai atribuir somente o último estilo atribuído. */
+        }
+
+        section{
+            background-color: pink;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Título da página</h1>
+
+        <p class="paragrafo"><span id="letra">L</span>orem ipsum dolor sit, amet consectetur adipisicing elit. Dicta cupiditate a est mollitia dolor odio beatae quidem numquam. Tenetur error eveniet incidunt quod quibusdam doloremque corporis, sint dolorum deserunt perferendis.</p>
+        <p class="paragrafo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta cupiditate a est mollitia dolor odio beatae quidem numquam. Tenetur error eveniet incidunt quod quibusdam doloremque corporis, sint dolorum deserunt perferendis.</p>
+        <p class="paragrafo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta cupiditate a est mollitia dolor odio beatae quidem numquam. Tenetur error eveniet incidunt quod quibusdam doloremque corporis, sint dolorum deserunt perferendis.</p>
+        <p class="paragrafo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta cupiditate a est mollitia dolor odio beatae quidem numquam. Tenetur error eveniet incidunt quod quibusdam doloremque corporis, sint dolorum deserunt perferendis.</p>
+    </div>
+
+    <section>
+        <h2>Subtítulo da página</h2>
+
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error nemo delectus aliquid aperiam quam molestias debitis! Rerum odit nisi harum porro impedit sequi, labore perspiciatis dolor aliquam assumenda placeat dolores.</p>
+    </section>
+
+    <article>
+        <h2 id="subtitulo-diferente">Outro subtítulo</h2>
+    </article>
+
+    <header></header>
+    <main></main>
+    <footer></footer>
+</body>
+</html>
