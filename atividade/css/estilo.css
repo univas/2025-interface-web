@@ -1,0 +1,32 @@
+body {
+  background-color: #e6f0ff;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 20px;
+}
+
+#cabecalho {
+  background-color: #004080;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.descricao {
+  background-color: #cce0ff;
+  margin-top: 20px;
+  padding: 15px;
+}
+
+.atrações {
+  background-color: #99c2ff;
+  margin-top: 20px;
+  padding: 15px;
+}
+
+#rodape {
+  background-color: #004080;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 40px;
+}
