@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            font-family: sans-serif;
+        }
+
+        h1:hover{
+            cursor: pointer;
+            color: blue;
+            border: 1px solid green;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .active:active{
+            color: red;
+        }
+
+        .hover:hover{
+            color: blue;
+        }
+
+        #tarefas li:first-child{
+            font-weight: bold;
+        }
+
+        #tarefas li:last-child{
+            background-color: darkgreen;
+        }
+
+        #tarefas li:hover{
+            background-color: #f0f800;
+            cursor: pointer;
+        }
+
+        .produto{
+            width: 30%;
+            border: 1px solid #CCC;
+            display: inline-block;
+            padding: 5px;
+            background: radial-gradient(circle,rgba(250, 142, 0, 1) 0%, rgba(253, 29, 29, 1) 38%, rgba(252, 176, 69, 1) 100%);
+            color: white;
+        }
+
+        .produto:hover{
+            background: lightblue;
+            border-radius: 15px;
+            color: blue;
+            transform: scale(1.1);
+            transition: 5s;
+            transform: translateY(-25px);
+            /* transform: translateY(-25px) scale(1.1); -- para usar os dois*/
+            transform: rotate(360deg);
+        }
+    </style>
+</head>
+<body>
+    <h1>Pseudo Seletores CSS</h1>
+
+    <ul class="lista">
+        <li class="hover">Hover (Troca o estilo, ao passar o mouse por cima)</li>
+        <li class="active">active (Troca o estilo, ao clicar com o mouse, enquanto está clicado)</li>
+    </ul>
+
+    <h2>Tarefas</h2>
+    <ul id="tarefas">
+        <li>Estudar HTML</li>
+        <li>Estudar CSS</li>
+        <li>Criar exercícios práticos</li>
+        <li>Praticar com os exercícios criados</li>
+    </ul>
+
+    
+    <section>
+        <h2>Produtos</h2>
+        
+        <article class="produto">
+            <h3>Produto 01</h3>
+            <p>Descrição do produto 01</p>
+        </article>
+    
+        <article class="produto">
+            <h3>Produto 01</h3>
+            <p>Descrição do produto 01</p>
+        </article>
+    
+        <article class="produto">
+            <h3>Produto 01</h3>
+            <p>Descrição do produto 01</p>
+        </article>
+    </section>
+</body>
+</html>
