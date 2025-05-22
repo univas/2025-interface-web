@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body, html{
+            height: 100%;
+        }
+        .container{
+            display: flex;
+            border: 1px solid #CCC;
+            background-color: red;
+            height: 100%;
+            flex-direction: row;
+            /* 
+                Justify-content => eixo principal
+                alignt-items => eixo cruzado (oposto)
+            */
+
+            /* 
+                space-between => Distribui o especaço igualitariamente entre os elementos.
+                space-around => Distribui o espaço igualitariamente ao redor dos elementos.
+            */
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .caixa{
+            width: 50px;
+            height: 50px;
+            background-color: blue;
+        }
+
+        .caixa2{ background-color: blueviolet; }
+        .caixa3{ background-color: orange; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="caixa caixa1"></div>
+        <div class="caixa caixa2"></div>
+        <div class="caixa caixa3"></div>
+    </div>
+</body>
+</html>
