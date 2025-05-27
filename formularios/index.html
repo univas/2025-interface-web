@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Meu formulário</h1>
+
+    <!-- Action é um programa que receberá os dados do formulário. Quando deixamos em branco, será enviado para ele mesmo. -->
+     <!-- method recebe qual verbo/método HTTP será utilizado. HTML puro somente aceita GET e POST. Quando deixamos em branco utiliza-se o GET por padrão. -->
+    <form action="" method="">
+        <!-- Textos puros como parágrafos ou títulos não são enviados na requisição. -->
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium debitis dolores doloribus dolorum id nisi consectetur natus voluptates autem praesentium tempore ad aliquam dolore consequuntur vitae, commodi nesciunt nostrum illum?</p>
+
+        <label for="">Input texto</label>
+        <input name="texto" type="text" required />
+        <br>
+
+        <label for="">E-mail</label>
+        <input name="email" type="email" value="teste@teste.com" readonly>
+        <br>
+
+        <label for="">Senha</label>
+        <input name="Senha" type="password" />
+        <br>
+
+        <label for="">Número</label>
+        <input name="numero" type="number" placeholder="Digite um número de 1 a 10" />
+        <br>
+
+        <label for="">escolaridade</label><br>
+        <input name="escolaridade" value="fund" type="radio" /> Fundamental
+        <input name="escolaridade" value="med" type="radio" /> Médio
+        <input name="escolaridade" value="sup" type="radio" /> Superior
+        <br>
+
+        <label for="">Check</label>
+        <input checked name="checkbox" type="checkbox" />
+        <br>
+
+        <label for="">Texto grande</label>
+        <textarea disabled name="texto_longo" rows="10" cols="50"></textarea>
+        <br>
+
+        <label for="">Lista</label>
+        <select name="Lista">
+            <option value="1">Valor 01</option>
+            <option value="2">Valor 02</option>
+        </select>
+        <br>
+
+        <input type="submit" role="button">
+        <!-- <button type="submit">Enviar</button> -->
+    </form>
+</body>
+</html>
