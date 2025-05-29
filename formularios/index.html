@@ -4,6 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        input, select, textarea{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            padding: 10px;
+            margin-bottom: 12px;
+            border: 1px solid #CCC;
+            border-radius: 5px;
+            width: 100%;
+        }
+
+        input:focus, textarea:focus{
+            outline: none;
+            border: 2px solid #0077CC;
+            background-color: #f0f8ff;
+        }
+
+        label{
+            font-weight: bold;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        button{
+            background-color: #0077CC;
+            color: white;
+            padding: 10px 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover{
+            background-color: #005fa3;
+        }
+
+        form{
+            width: 60%;
+            margin: 0 auto;
+            border: 1px solid #CCC;
+            padding: 20px;
+            border-radius: 5px;
+        }
+    </style>
 </head>
 <body>
     <h1>Meu formulário</h1>
@@ -15,7 +64,7 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium debitis dolores doloribus dolorum id nisi consectetur natus voluptates autem praesentium tempore ad aliquam dolore consequuntur vitae, commodi nesciunt nostrum illum?</p>
 
         <label for="texto">Input texto</label>
-        <input name="texto" id="texto" type="text" required />
+        <input name="texto" autofocus id="texto" type="text" required />
         <br>
 
         <label for="">E-mail</label>
@@ -23,11 +72,11 @@
         <br>
 
         <label for="">Senha</label>
-        <input name="Senha" type="password" />
+        <input name="Senha" maxlength="6" type="password" />
         <br>
 
         <label for="">Número</label>
-        <input name="numero" type="number" placeholder="Digite um número de 1 a 10" />
+        <input name="numero" max="5" type="number" placeholder="Digite um número de 1 a 10" />
         <br>
 
         <label for="">escolaridade</label><br>
@@ -51,8 +100,16 @@
         </select>
         <br>
 
-        <input type="submit" role="button">
-        <!-- <button type="submit">Enviar</button> -->
+        <label for="">Cor</label>
+        <input type="color" name="" id="">
+        <br>
+
+        <label for="">Arquivo</label>
+        <input type="file" name="" id="" accept="application/pdf">
+        <br>
+
+        <!-- <input type="submit" role="button"> -->
+        <button type="submit">Enviar</button>
     </form>
 </body>
 </html>
