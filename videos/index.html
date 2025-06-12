@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+
+        h2{
+            font-size: 12px;
+            margin: 0;
+            margin-bottom: 10px;
+        }
+
+        p{
+            font-size: 10px;
+            margin: 0;
+            padding: 0;
+        }
+
+        span{
+            font-size: 8px;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1{
+            font-size: 28px;
+            text-transform: uppercase;
+            margin-top: 20px;
+        }
+
+        main{
+            display: flex;
+            max-width: 100%;
+            flex-wrap: nowrap;
+            margin: 10px;
+        }
+
+        video{
+            max-width: 100%;
+        }
+
+        aside{
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        aside article{
+            display: flex;
+            flex-wrap: nowrap;
+            align-items: center;
+        }
+
+        aside article video{
+            max-width: 50%;
+            margin: 10px;
+        }
+
+        article{
+            margin: 10px;
+        }
+
+        video{
+            border-radius: 8px;
+        }
+
+        img{
+            width: 35px;
+        }
+
+        #canal{
+            display: flex;
+            align-items: center;
+        }
+
+        #canal p{
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        #canal *{
+            margin: 0;
+        }
+
+        #canal img{
+            margin-right: 5px;
+        }
+
+        section{
+            display: flex;
+            align-items: center;
+            margin-top: 15px;
+        }
+
+        #botoes{
+            margin-left: 35px;
+        }
+
+        #botoes button{
+            padding: 5px 15px;
+            background: rgba(0,0,0,0.7);
+            color: white;
+            font-size: 11px;
+            border: none;
+            border-radius: 15px;
+        }
+
+        #botoes button:nth-child(2){
+            background-color: white;
+            border: 1px solid rgba(0,0,0,0.7);
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <article>
+            <div>
+                <video controls src="./flower.webm"></video>
+                <h1>Título do vídeo principal</h1>
+            </div>
+            <section>
+                <div id="canal">
+                    <article>
+                        <img src="./avatar.png" alt="Avatar">
+                    </article>
+                    <article>
+                        <p>Nome do Canal</p>
+                        <span>1,5m de inscritos</span>
+                    </article>
+                </div>
+                <div id="botoes">
+                    <button>Seja Membro</button>
+                    <button>Inscreva-se</button>
+                </div>
+            </section>
+        </article>
+        <aside>
+            <article>
+                <video src="./flower.webm"></video>
+                <div>
+                    <h2>Título secundário</h2>
+                    <p>Nome do canal</p>
+                    <span>1,5m de visualizações</span>
+                </div>
+            </article>
+            <article>
+                <video src="./flower.webm"></video>
+                <div>
+                    <h2>Título secundário</h2>
+                    <p>Nome do canal</p>
+                    <span>1,5m de visualizações</span>
+                </div>
+            </article>
+            <article>
+                <video src="./flower.webm"></video>
+                <div>
+                    <h2>Título secundário</h2>
+                    <p>Nome do canal</p>
+                    <span>1,5m de visualizações</span>
+                </div>
+            </article>
+        </aside>
+    </main>
+</body>
+</html>
