@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            border-radius: 8px;
+            box-shadow: 0 0 10px blue;
+            max-width: 100%; 
+            height: auto;
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            /* contain => mantém a proporção da imagem deixando espaços em branco. */
+            /* cover => mantém a proporção mas cortando pedaços da imagem. */
+        }
+
+        #tigre{
+            display: block;
+        }
+
+        #pinguim{
+            display: none;
+        }
+
+        @media screen and (max-width: 768px) {
+            #tigre{
+                display: none;
+            }
+
+            #pinguim{
+                display: block;
+            }
+        }
+    </style>
+    <!-- max-width vai usar 100% da tela até o tamanho máximo da imagem -->
+</head>
+<body>
+    <picture>
+        <source srcset="./tigre.jpg" media="(min-width: 768px)">
+        <source srcset="./pinguim.jpg" media="(max-width: 768px)">
+        <img src="./tigre.jpg" alt="Tigre caminhando na selva.">
+    </picture>
+
+    <img id="tigre" src="./tigre.jpg" alt="Tigre caminhando na selva.">
+    <img id="pinguim" src="./pinguim.jpg" alt="Pinguim na neve." loading="lazy">
+
+
+</body>
+</html>
